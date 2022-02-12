@@ -19,20 +19,7 @@ nasdaqdatalink.ApiConfig.api_key = nasdaq_api_key
 #     df = nasdaqdatalink.get('ECONOMIST/' + code)
 #     df.to_csv(code + '.csv')
 
-mdf = pd.DataFrame (columns = [
-        'Date',
-        'local_price',
-        'dollar_ex',
-        'dollar_price',
-        'dollar_ppp',
-        'dollar_valuation',
-        'dollar_adj_valuation',
-        'euro_adj_valuation',
-        'sterling_adj_valuation',
-        'yen_adj_valuation',
-        'yuan_adj_valuation',
-        'code'
-        ])
+mdf = pd.DataFrame ()
 
 for code in codeList:
     df = nasdaqdatalink.get('ECONOMIST/' + code)
